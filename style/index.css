@@ -44,13 +44,13 @@ table {
 	border-spacing: 0;
 }
 body{
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', Arial;
     font-size: 20px;
     /* font-size: 1.2vw; */
 }
 /* start of header css */
 .header-name{
-    border: 1px solid black;
+
     font-size: 60px;
     /* font-size:4vw; */
 }
@@ -59,7 +59,6 @@ body{
     background-image: linear-gradient(white, #6FDAFF); */
     display:flex;
     flex-direction: column;
-    border: 1px solid black;
     justify-content:center;
     align-items:center;
     height:35vh;
@@ -67,7 +66,6 @@ body{
 }
 .header-nav {
    display: flex;
-   border: 1px solid black;
 }
 .header-text {
     padding-left: 2vw;
@@ -80,3 +78,22 @@ body{
     padding: 1vw 2vw 1vw 2vw;
 }
 /* end of header css */
+
+.image{
+    background-image: url("https://picsum.photos/1920/500");
+    height: 50vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.bottom-section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.bottom-images{
+    width:25%;
+    height:25vw;
+    border: 1px solid black;
+    margin: 1.5vw;
+    
+}
