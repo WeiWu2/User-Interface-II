@@ -46,7 +46,7 @@ table {
 body{
     font-family: 'Noto Serif', Arial;
     font-size: 20px;
-    /* font-size: 1.2vw; */
+    font-size: 1.2vw;
 }
 /* start of header css */
 .header-name{
@@ -73,15 +73,17 @@ body{
 }
 .header-nav-link{
     text-decoration: none;
-    color:black;
     border: 1px solid black;
     padding: 1vw 2vw 1vw 2vw;
 }
 /* end of header css */
-
+/* middle portion of site, images */
 .image{
-    background-image: url("https://picsum.photos/1920/500");
+    background-image: url("https://picsum.photos/1980/440");
     height: 50vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
 }
@@ -91,9 +93,26 @@ body{
     align-items:center;
 }
 .bottom-images{
+    background-image: url("https://picsum.photos/500/600");
     width:25%;
-    height:25vw;
-    border: 1px solid black;
+    height:30vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     margin: 1.5vw;
     
+}
+/* footer contact me link */
+.footer{
+    display: flex;
+    width: auto;
+    height: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 1vw 2vw 1vw 2vw;
 }
