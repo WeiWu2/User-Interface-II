@@ -16,43 +16,22 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* General styles */
+html{
+    font-size:62.5%;
 }
 body{
     font-family: 'Noto Serif', Arial;
-    font-size: 20px;
-    font-size: 1.2vw;
+    font-size: 2.5rem;
 }
 /* start of header css */
 .header-name{
-
-    font-size: 60px;
-    /* font-size:4vw; */
+    font-size: 6rem;
 }
 .header-container{
     /* background-color: #6FDAFF;
@@ -61,22 +40,35 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    height:35vh;
+    height:30vh;
     justify-content: space-evenly;
+    /* border: 1px solid black; */
+    margin-bottom: 0;
 }
 .header-nav {
    display: flex;
 }
-.header-text {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
 .header-nav-link{
+    color:black;
     text-decoration: none;
     border: 1px solid black;
-    padding: 1vw 2vw 1vw 2vw;
+    padding: 1vw 2vw;
 }
-/* end of header css */
+/* end of header styles */
+/* start of main styles */
+.main {
+
+}
+.main-text {
+    padding: 0 2vw;
+}
+.main h2{
+    margin: 0 0;
+    text-align: center;
+   font-size: 5rem;
+}
+
+/* end of main styles */
 /* middle portion of site, images */
 .image{
     background-image: url("https://picsum.photos/1980/440");
@@ -84,8 +76,8 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin: 0 1.5vw;
+    
 }
 .bottom-section{
     display:flex;
@@ -99,11 +91,10 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
     margin: 1.5vw;
     
 }
-/* footer contact me link */
+/* footer styles*/
 .footer{
     display: flex;
     width: auto;
@@ -114,5 +105,23 @@ body{
 .footer-link{
     text-decoration: none;
     border: 1px solid black;
-    padding: 1vw 2vw 1vw 2vw;
+    padding: 1vw 2vw;
+}
+@media(max-width:800px)
+{
+    .header-container{
+
+        height: 40vh;
+    }
+    .header-nav{
+        flex-direction: column;
+        width:20%;
+    }
+    .header-nav-link{
+        text-align: center;
+    }
+    .image{
+       
+    }
+
 }
