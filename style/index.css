@@ -1,1 +1,184 @@
-/* Add CSS styling here */
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* General styles */
+html{
+    font-size:62.5%;
+}
+body{
+    font-family: 'Noto Serif', Arial;
+    font-size: 2.5rem;
+    color:#4F4F4F;
+}
+/* start of header css */
+.header-name{
+    font-size: 6rem;
+}
+.header-container{
+    /* background-color: #6FDAFF;
+    background-image: linear-gradient(white, #6FDAFF); */
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    min-height:30vh;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    
+}
+.header-nav {
+   display: flex;
+   min-width:40%
+}
+.header-nav-link{
+    color:#4F4F4F;
+    text-decoration: none;
+    border: 1px solid black;
+    width:100%;
+    text-align: center;
+    padding: 2% 0;
+}
+/* end of header styles */
+/* start of main styles */
+
+.main-text {
+    padding: 2% 10%;
+}
+section h2{
+    margin-top:-1%;
+    text-align: center;
+   font-size: 5rem;
+   
+}
+
+/* end of main styles */
+/* middle portion of site, images */
+.image{
+    background-image: url("https://picsum.photos/1980/440");
+    min-height: 60vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 1.5vw;
+    
+}
+.bottom-section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+
+}
+.bottom-images{
+    background-image: url("https://picsum.photos/500/600");
+    width:25%;
+    min-height:40vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1.5vw;
+    
+}
+.bottom-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-text p{
+    width: 50%;
+    text-align: center;
+}
+/* footer styles*/
+.footer{
+    display: flex;
+    width: auto;
+    min-height: 10vw;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+.footer-link{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 1vw 2vw;
+    background-color: white;
+}
+@media(max-width:800px)
+{
+    .header-container{
+        min-height: 40vh;
+    }
+    .header-nav{
+        flex-direction: column;
+        min-width: 25%;
+    }
+    .header-nav-link{
+      padding: 5% 0;
+    }
+    .image{
+        background-image: url("https://picsum.photos/800/800");
+        margin-bottom: 4%;
+        margin: 0 5.5%;
+    }
+    .main-text {
+        padding: 6%;
+    }
+    .bottom-section{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 4%;
+    }
+    .bottom-images{
+        border:1px solid black;
+        width:45%;
+        min-height: 80vh;
+    }
+    .bottom-text{
+        width: 100%;
+        min-height:20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom-text p {
+        justify-content: center;
+        max-width: 50%;
+        text-align: center;
+     }
+    .footer{
+        min-height: 20vw;
+     
+    }
+   
+}
+@media(max-width:500px){
+    .header-nav{
+     
+        min-width: 35%;
+    }
+    .header-nav-link{
+      
+      
+    }
+        
+}
