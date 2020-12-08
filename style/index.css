@@ -41,10 +41,11 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    height:30vh;
+    min-height:30vh;
     justify-content: space-evenly;
     /* border: 1px solid black; */
     margin-bottom: 0;
+    
 }
 .header-nav {
    display: flex;
@@ -54,24 +55,26 @@ body{
     text-decoration: none;
     border: 1px solid black;
     padding: 1vw 2vw;
+    width:100%;
 }
 /* end of header styles */
 /* start of main styles */
 
 .main-text {
-    padding: 2vw;
+    padding: 2% 10%;
 }
 section h2{
     margin-top:-1%;
     text-align: center;
    font-size: 5rem;
+   
 }
 
 /* end of main styles */
 /* middle portion of site, images */
 .image{
     background-image: url("https://picsum.photos/1980/440");
-    height: 50vh;
+    min-height: 60vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,34 +85,47 @@ section h2{
     display:flex;
     justify-content: center;
     align-items:center;
+
+
 }
 .bottom-images{
     background-image: url("https://picsum.photos/500/600");
     width:25%;
-    height:30vw;
+    min-height:40vw;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 1.5vw;
     
 }
+.bottom-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-text p{
+    width: 50%;
+    text-align: center;
+}
 /* footer styles*/
 .footer{
     display: flex;
     width: auto;
-    height: 10vw;
+    min-height: 10vw;
     justify-content: center;
     align-items: center;
+    background-color: lightgrey;
 }
 .footer-link{
     text-decoration: none;
     border: 1px solid black;
     padding: 1vw 2vw;
+    background-color: white;
 }
 @media(max-width:800px)
 {
     .header-container{
-        height: 40vh;
+        min-height: 40vh;
     }
     .header-nav{
         flex-direction: column;
@@ -132,16 +148,31 @@ section h2{
     .bottom-images{
         border:1px solid black;
         width:45%;
-        height: 80vh;
+        min-height: 80vh;
     }
     .bottom-text{
         width: 100%;
-        height:20vh;
+        min-height:20vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    .bottom-text p {
+        justify-content: center;
+        max-width: 50%;
+        text-align: center;
+     }
     .footer{
-        height: 20vw;
+        min-height: 20vw;
+     
     }
+   
+}
+@media(max-width:500px){
+    .header-nav-link{
+        border: 4%;
+        padding: 1.5vw 4vw;
+      
+    }
+        
 }
