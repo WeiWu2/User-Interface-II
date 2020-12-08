@@ -28,6 +28,7 @@ html{
 body{
     font-family: 'Noto Serif', Arial;
     font-size: 2.5rem;
+    color:#4F4F4F;
 }
 /* start of header css */
 .header-name{
@@ -49,21 +50,19 @@ body{
    display: flex;
 }
 .header-nav-link{
-    color:black;
+    color:#4F4F4F;
     text-decoration: none;
     border: 1px solid black;
     padding: 1vw 2vw;
 }
 /* end of header styles */
 /* start of main styles */
-.main {
 
-}
 .main-text {
-    padding: 0 2vw;
+    padding: 2vw;
 }
-.main h2{
-    margin: 0 0;
+section h2{
+    margin-top:-1%;
     text-align: center;
    font-size: 5rem;
 }
@@ -110,7 +109,6 @@ body{
 @media(max-width:800px)
 {
     .header-container{
-
         height: 40vh;
     }
     .header-nav{
@@ -121,7 +119,29 @@ body{
         text-align: center;
     }
     .image{
-       
+        background-image: url("https://picsum.photos/800/800");
+        margin-bottom: 4%;
     }
-
+    .main-text {
+        padding: 6%;
+    }
+    .bottom-section{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .bottom-images{
+        border:1px solid black;
+        width:45%;
+        height: 80vh;
+    }
+    .bottom-text{
+        width: 100%;
+        height:20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        height: 20vw;
+    }
 }
